@@ -45,17 +45,17 @@ export default function ContactPage() {
           <div className="md:col-span-2">
             <SectionHeading eyebrow="Reach us directly" title="Prefer email or a call?" />
             <div className="mt-6 space-y-4">
-              <a href="mailto:hello@CompliancePilot.app" className="flex items-center gap-3 text-sm text-ink/80 hover:text-navy">
+              <a href="mailto:rohittech128@gmail.com" className="flex items-center gap-3 text-sm text-ink/80 hover:text-navy">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-navy/5 text-navy"><IconMail width={16} height={16} /></span>
-                hello@CompliancePilot.app
+                rohittech128@gmail.com
               </a>
               <a href="tel:+911140001234" className="flex items-center gap-3 text-sm text-ink/80 hover:text-navy">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-navy/5 text-navy"><IconPhone width={16} height={16} /></span>
-                +91 11 4000 1234
+                +91 858 606 5128
               </a>
               <span className="flex items-center gap-3 text-sm text-ink/80">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-navy/5 text-navy"><IconPin width={16} height={16} /></span>
-                New Delhi, India
+                Noida, India
               </span>
             </div>
             <div className="mt-10 rounded-2xl border border-border bg-paper p-6 shadow-card">

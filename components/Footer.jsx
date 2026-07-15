@@ -36,14 +36,14 @@ export default function Footer() {
               CA firms, compliance consultants, manufacturers, and growing MSMEs across India.
             </p>
             <div className="mt-6 space-y-2 text-sm">
-              <a href="mailto:hello@CompliancePilot.app" className="flex items-center gap-2 hover:text-white">
-                <IconMail width={15} height={15} /> hello@CompliancePilot.app
+              <a href="mailto:rohittech128@gmail.com" className="flex items-center gap-2 hover:text-white">
+                <IconMail width={15} height={15} /> rohittech128@gmail.com
               </a>
               <a href="tel:+911140001234" className="flex items-center gap-2 hover:text-white">
-                <IconPhone width={15} height={15} /> +91 11 4000 1234
+                <IconPhone width={15} height={15} /> +91 858 606 5128
               </a>
               <span className="flex items-center gap-2">
-                <IconPin width={15} height={15} /> New Delhi, India
+                <IconPin width={15} height={15} /> Noida, India
               </span>
             </div>
           </div>
