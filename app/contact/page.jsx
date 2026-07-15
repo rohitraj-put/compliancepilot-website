@@ -127,7 +127,7 @@ export default function ContactPage() {
                       <input
                         value={form.company}
                         onChange={update('company')}
-                        placeholder="Sanskriti Textiles Pvt Ltd"
+                        placeholder="India Textiles Pvt Ltd"
                         className="w-full rounded-lg border border-border bg-parchment px-3.5 py-2.5 text-sm text-ink outline-none focus:border-saffron"
                       />
                     </div>

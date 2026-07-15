@@ -1,5 +1,5 @@
 const ROWS = [
-  { company: 'Sanskriti Textiles', type: 'Factory License', due: '12 Jul', tone: 'amber' },
+  { company: 'India Textiles', type: 'Factory License', due: '12 Jul', tone: 'amber' },
   { company: 'Bharat Auto Components', type: 'Pollution NOC', due: 'Overdue', tone: 'red', stamped: true },
   { company: 'Nilgiri Foods & Bev.', type: 'Trade License', due: '9 Jul', tone: 'amber' },
   { company: 'Orbit Precision Tools', type: 'GST Return', due: '25 Jul', tone: 'green' },

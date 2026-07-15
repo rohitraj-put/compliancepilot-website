@@ -33,7 +33,7 @@ function DashboardVisual() {
 
 function TrackerVisual() {
   const rows = [
-    { c: 'Sanskriti Textiles', t: 'GST', s: 'Active', tone: 'bg-signal-greenBg text-signal-green' },
+    { c: 'India Textiles', t: 'GST', s: 'Active', tone: 'bg-signal-greenBg text-signal-green' },
     { c: 'Bharat Auto', t: 'Pollution NOC', s: 'Overdue', tone: 'bg-signal-redBg text-signal-red' },
     { c: 'Orbit Precision', t: 'Factory License', s: 'Expiring', tone: 'bg-signal-amberBg text-saffron-dark' },
   ]
@@ -57,7 +57,7 @@ function TrackerVisual() {
 function CalendarVisual() {
   const rows = [
     { l: 'Factory License — Orbit', d: '3d left', w: '92%', c: 'bg-signal-red' },
-    { l: 'GST Return — Sanskriti', d: '12d left', w: '68%', c: 'bg-saffron' },
+    { l: 'GST Return — India', d: '12d left', w: '68%', c: 'bg-saffron' },
     { l: 'ESI Filing — Bharat Auto', d: '60d left', w: '35%', c: 'bg-signal-green' },
   ]
   return (
@@ -83,7 +83,7 @@ function VaultVisual() {
   return (
     <MockPanel title="document-vault.tsx">
       <div className="font-mono text-[13px] leading-[2.1] text-ink/75">
-        <div className="font-semibold text-navy">▸ Sanskriti Textiles</div>
+        <div className="font-semibold text-navy">▸ India Textiles</div>
         <div className="pl-4">├ GST <span className="text-muted">/ 3 files</span></div>
         <div className="pl-4">├ Factory License <span className="text-muted">/ v2</span></div>
         <div className="pl-4 text-saffron-dark">├ Fire NOC <span className="text-muted">/ v1</span></div>
@@ -118,7 +118,7 @@ function TasksVisual() {
 function ConsultantVisual() {
   const rows = [
     { n: 'Bharat Auto Components', tag: '2 overdue', tone: 'text-signal-red' },
-    { n: 'Sanskriti Textiles', tag: '1 expiring', tone: 'text-saffron-dark' },
+    { n: 'India Textiles', tag: '1 expiring', tone: 'text-saffron-dark' },
     { n: 'Nilgiri Foods & Bev.', tag: 'On track', tone: 'text-signal-green' },
     { n: 'Orbit Precision Tools', tag: 'On track', tone: 'text-signal-green' },
   ]
@@ -162,7 +162,7 @@ function AIVisual() {
           PF kab mandatory hota hai?
         </div>
         <div className="max-w-[85%] rounded-2xl rounded-tl-sm border border-border bg-paper px-4 py-2.5 text-sm text-ink/80">
-          PF applies once a company crosses 20 employees. Sanskriti Textiles is at 42 — filing is required.
+          PF applies once a company crosses 20 employees. India Textiles is at 42 — filing is required.
         </div>
       </div>
     </MockPanel>

@@ -196,7 +196,7 @@ export default function Home() {
               <div className="space-y-3">
                 {[
                   { name: 'Bharat Auto Components', tag: '2 overdue', tone: 'text-signal-red' },
-                  { name: 'Sanskriti Textiles', tag: '1 expiring', tone: 'text-saffron-dark' },
+                  { name: 'India Textiles', tag: '1 expiring', tone: 'text-saffron-dark' },
                   { name: 'Nilgiri Foods & Bev.', tag: 'On track', tone: 'text-signal-green' },
                 ].map((row) => (
                   <div key={row.name} className="flex items-center justify-between rounded-xl border border-border px-4 py-3 text-sm">
