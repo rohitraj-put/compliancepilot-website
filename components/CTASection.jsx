@@ -8,7 +8,7 @@ export default function CTASection({
   return (
     <section className="bg-navy">
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
-        <div className="flex flex-col items-start justify-between gap-8 rounded-3xl border border-white/10 bg-navy-light/60 p-10 sm:p-14 md:flex-row md:items-center">
+        <div className="flex flex-col items-start justify-between gap-8 rounded-3xl border border-white/10 bg-navy-light/60 p-5 sm:p-14 md:flex-row md:items-center">
           <div className="max-w-lg">
             <div className="eyebrow !text-saffron">{eyebrow}</div>
             <h2 className="mt-2 font-display text-3xl font-semibold text-white sm:text-4xl">{title}</h2>
