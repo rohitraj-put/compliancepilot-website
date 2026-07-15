@@ -31,9 +31,9 @@ export default function AboutPage() {
             Built by people who’ve filed these renewals by hand.
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-white/65">
-            CompliancePilot grew out of Agile Regulatory’s own work managing GST, BIS certification,
-            and EPR filings for Indian manufacturers — built first to solve our own client register,
-            then opened up to every firm carrying the same weight.
+            CompliancePilot grew out of our own work managing GST, BIS certification,
+            and EPR filings for Indian manufacturers — built first to solve our internal client register,
+            then opened up to other firms facing the same challenges.
           </p>
         </div>
       </section>

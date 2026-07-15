@@ -75,7 +75,6 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row">
           <span>© {new Date().getFullYear()} CompliancePilot. All rights reserved.</span>
-          <span className="font-mono">A product built with Agile Regulatory</span>
         </div>
       </div>
     </footer>
