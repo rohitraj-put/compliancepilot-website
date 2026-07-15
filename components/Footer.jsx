@@ -73,8 +73,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row">
-          <span>© {new Date().getFullYear()} CompliancePilot. All rights reserved.</span>
+        <div className="mt-14border-t border-white/10 pt-6 text-xs text-white/40 text-center">
+          <span>© {new Date().getFullYear()} CompliancePilot. All rights reserved. made with ❤️ in Noida <a href="https://rohitrajputweb.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-saffron hover:underline">[Rohit Rajput]</a></span>
         </div>
       </div>
     </footer>
