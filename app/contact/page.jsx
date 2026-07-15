@@ -1,29 +1,58 @@
 'use client'
 
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
+import emailjs from '@emailjs/browser'
 import SectionHeading from '../../components/SectionHeading'
 import Button from '../../components/Button'
 import { IconMail, IconPhone, IconPin, IconCheckCircle } from '../../components/Icons'
 
 const INTERESTS = ['Starter', 'Professional', 'Enterprise', 'Not sure yet']
+const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', interest: 'Not sure yet', message: '' })
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState('')
 
+  useEffect(() => {
+    if (EMAILJS_PUBLIC_KEY) {
+      emailjs.init(EMAILJS_PUBLIC_KEY)
+    }
+  }, [])
+
   const update = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }))
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     if (!form.name.trim() || !form.email.trim()) {
       setError('Please share your name and email so we can get back to you.')
       return
     }
     setError('')
-    // This demo form is front-end only. Wire this up to your API route,
-    // form service, or CRM of choice to actually receive submissions.
-    setSubmitted(true)
+
+    try {
+      const response = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        {
+          name: form.name,
+          company: form.company,
+          email: form.email,
+          phone: form.phone,
+          interest: form.interest,
+          message: form.message,
+        }
+      )
+
+      if (response.status === 200) {
+        setSubmitted(true)
+        setForm({ name: '', company: '', email: '', phone: '', interest: 'Not sure yet', message: '' })
+      }
+    } catch (err) {
+      setError(err.message || 'Unable to send message. Please try again.')
+    }
   }
 
   return (
